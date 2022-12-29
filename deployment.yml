@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: praful02/nodeapp:latest
+        image: praful02/test_100:latest
         ports:
         - containerPort: 3000
