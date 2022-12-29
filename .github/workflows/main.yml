@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Scripts
         run: |
-          docker build -t nodeapp .
+          docker build -t test_100 .
           docker login -u praful02 -p dckr_pat_izRS5y5xZAak7xONex1hapU6OBg
-          docker tag nodeapp praful02/nodeapp
-          docker push praful02/nodeapp
+          docker tag test_100 praful02/test_100
+          docker push praful02/test_100
