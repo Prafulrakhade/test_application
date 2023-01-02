@@ -29,6 +29,6 @@ jobs:
       - name: Scripts
         run: |
           docker build -t test_100 .
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p {{ secrets.DOCKER_PASSWORD }}
+          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
           docker tag test_100 praful02/test_100
           docker push praful02/test_100
